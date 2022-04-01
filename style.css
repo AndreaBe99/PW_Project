@@ -1,0 +1,1161 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-width: 320px;
+    margin: auto;
+    
+    background: url(./img/pianta.jpg);
+     background-size: cover;
+    transform-origin: center center 0;
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: green;
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+	
+    padding: 0px 2px;
+    margin: 0px 15px;
+    padding-top:15vh;
+ /* Used in this example to enable scrolling */
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+
+footer{
+    margin-top: 50px;
+    width: 100%;
+    height: 50vh;
+    min-width: 320px;
+    background-color: black;
+     overflow:hidden;
+}
+
+footer .container{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+a{
+	text-decoration:none;
+    color:black;
+}
+a:hover{
+	color:black;
+    text-decoration:none;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    margin: 10px 10px;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 100px;
+	 display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn:hover {
+  background-color: #45a049;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#banner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 30px;
+  color: green;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+#figureBanner{
+	 background-color: #f0f0f0;
+     border-radius: 20px;
+     display:flex;
+     flex-direction:column;
+     justify-content:center;
+     align-items:center;
+}
+#figureBanner img{
+	 margin: 20px;
+     border-radius: 10px;
+}
+#figureBanner figcaption{
+	 padding: 3px 10px;
+     font-weight:bold;
+}
+#figNome{
+	font-weight:bold;
+    text-transform:uppercase;
+}
+
+#parallasse{
+	display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    height:100vh;
+    background-image: url(./img/pianta.jpg);
+    background-size: cover;
+    border-bottom: 2px solid green;
+}
+#parallasse .logo{
+	font-size: 30px;
+    margin: 40px auto;
+	margin-top: 12vh;
+    width:300px;
+    background: #f0f0f0;
+    color: green;
+    font-weight: bold;
+    padding: 10px 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    border-radius: 20px;
+}
+#parallasse p{
+	font-size: 15px;
+    text-align:center;
+}
+#parallasse .imgLogo img{
+    width: 60px;
+    height: 60px;
+    margin: auto 20px;
+}
+
+.container3Intro{
+    background-color: #f0f0f0; 
+    margin: 30px 0px;
+    border-radius:25px;
+}
+
+.containerIntro{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+.text-area h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: #465157;
+    line-height: 35px;
+}
+.text-area p{
+   font-size: 20px;
+    font-weight: 300;
+    color: #839199;
+    line-height: 23px;
+}
+@media screen and (max-width:500px){
+   .text-area h3{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 25px;
+    }
+    .text-area p{
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 16px;
+    }
+}
+.porto-icon-shipping{
+    background-image: url("./img/info/003-trolley.png");
+    height: 80px;
+    width: 80px;
+    background-position: center;
+    background-size: contain;
+      background-repeat: no-repeat;
+}
+.porto-icon-heart{
+    background-image: url("./img/info/002-heart.png");
+        height: 80px;
+    width: 80px;
+    background-position: center;
+    background-size: contain;
+      background-repeat: no-repeat;
+}
+.porto-icon-garden{
+    background-image: url("./img/info/001-watering-can.png");
+        height: 80px;
+    width: 80px;
+    background-position: center;
+    background-size: contain;
+      background-repeat: no-repeat;
+}
+
+
+
+/**** PARALLASSE ***/
+#titoloParallax{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+#titoloParallax h2{
+    margin: 0px 10px;
+    font-weight: bold;
+    color: #4CAF50;
+    text-align: center;
+}
+@media screen and (max-width:500px){
+    #titoloParallax h2{
+        font-size: 30px;
+    }
+}
+.parallax{
+    width: 100%;
+    border: solid green 10px;
+    border-radius:10px;
+   
+}
+.container-parallax{
+    height: 50vh;
+    display: flex;
+    width: 100%;
+}
+.parallax-text{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+.top{
+	border-top:solid green 4px;
+}
+.left{
+	border-left:solid green 4px;
+}
+.right{
+	border-right:solid green 4px;
+}
+.bottom{
+	border-bottom:solid green 4px;
+}
+
+.parallax-text h2{
+        font-size: 40px;
+         margin: 0px 15px;
+        font-weight: bold; 
+        color: green;
+        text-transform: uppercase;
+}
+.parallax-text p{
+        font-size: 20px;
+        font-weight: bold; 
+        color: #666666;
+        margin: 0px 20px;
+        text-align: justify;
+}
+[class *= "parallax-img"]{
+  height: 50vh; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width:730px){
+    .parallax-text h2{
+        font-size: 30px;
+    }
+    .parallax-text p{
+            font-size: 16px;
+    }
+}
+@media screen and (max-width:500px){
+    .parallax-text h2{
+        font-size: 18px;
+    }
+    .parallax-text p{
+            font-size: 10px;
+    }
+}
+.parallax-img1{
+    background-image: url( "./img/parallax1.jpg");
+}
+.parallax-img2{
+    background-image: url( "./img/parallax2.jpg");
+}
+.parallax-img3{
+    background-image: url( "./img/parallax3.jpg");
+}
+.parallax-img4{
+    background-image: url( "./img/parallax4.jpg");
+}
+.container-parallax>div{
+     width: 50%;
+}
+
+
+
+
+
+
+/*** NAVBAR ***/
+.logo{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.imgLogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imgLogo img{
+    width: 30px;
+    height: 30px;
+    margin: auto 20px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 33.3334%;
+    height: 100%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{ /*Le tre linee del burger*/
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: green;
+        display:  flex;
+       	flex-direction: column;
+        align-items: center;
+        width: 80%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform:  translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform:  translateX(50px);
+    }
+}
+
+/** BURGER A FORMA DI X ***/
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/** PAGINA IN USO **/
+.pageActive {
+  background-color: #a5d6a7;
+  color: green;
+}
+.btnNavBar{
+	display:flex;
+    flex-direction:row;
+    align-items:center;
+    height:100%;
+}
+.btnNavBar>i{
+	height:35px;
+	margin:auto 5px;
+    margin-left:0px;
+}
+
+
+
+/*** SLIDER ***/
+.mySlides {display: none;}
+img {vertical-align: middle;}
+.mySlides>img {
+	border-radius:25px;
+	border:solid green 4px;
+    }
+
+.sliderContainer {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active { /* segna punti attivo*/
+  background-color: #717171;
+}
+
+
+
+/***** LISTA PRODOTTI ****/
+#formCerca{
+    padding: 0px 30px;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titoloCerca{
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+#cercaProdotto{
+    width: 380px;
+    background-color:  #a5d6a7;
+    color:darkgreen;
+    border-radius: 15px;
+    text-align: center;
+    text-transform:uppercase;
+    font-weight:bold;
+}
+@media screen and (max-width:500px){
+    .titoloCerca{
+        font-size: 30px;
+    }
+    #cercaProdotto{
+        width: 90%;
+    }
+}
+
+.section-title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.categorie {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.categorie ul li {
+    list-style: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    color: #1c1c1c;
+    display: inline-block;
+    margin-right: 25px;
+    position: relative;
+    cursor: pointer;
+}
+.active{
+    background-color: #a5d6a7;
+    border-radius: 25px;
+}
+
+.containerListaProdotti{
+    min-width: 320px;
+    margin: auto;
+    
+}
+.listaProdotti{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    margin: 0px 20px;
+    border-radius: 20px;
+}
+@media screen and (max-width:1024px){
+    .listaProdotti{
+        margin: 0px;
+    }
+}
+.elementoLista{
+    border: solid #a5d6a7 3px;
+    border-radius: 20px 20px 15px 15px;
+    background-color: #e8f5e9;
+    margin: 10px 5px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.elementoLista:hover{
+    background-color: #a5d6a7;
+}
+.elementoLista form{
+    width: 100%;
+    height: 100%;
+}
+.elementoLista .product-image{
+    background-color: #a5d6a7;
+    border-radius: 10px 10px 0px 0px;
+}
+.elementoLista .product-image img{
+    border: solid #a5d6a7 8px;
+    width: 100%;
+    height: 280px;
+    border-radius: 50px;
+}
+.containerNomeProdotto{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 10px;
+}
+.containerNomeProdotto:hover{
+    background-color: #a5d6a7;
+}
+
+.containerNomeProdotto span{
+    font-weight: bold;
+}
+.containerNomeProdotto div{
+    text-indent:20px;
+}
+.nomeProdotto{
+    font-weight: bold;
+    font-size: 18px;
+    color: darkgreen;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+}
+.containerAggiungi{
+    width: 100%;
+    margin: auto 0px;
+    padding: 20px 20px;
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: center;
+}
+.product-quantity{
+    margin: auto;
+    max-width: 70px;
+    text-align: center;
+    color: green;
+    
+}
+#inputQuantita{
+	border: solid 2px green !important;
+    border-radius: 5px !important;
+    margin:0px;
+}
+
+.btnAggiungi{
+    margin: auto 10px;
+    width: 100%;
+    height: 49px;
+    text-align: center;
+}
+
+/*** BANNER LISTA PRODOTTI ***/
+#bannerProdotti{
+	display: flex;
+    justify-content:center;
+    flex-direction:column;
+}
+#bannerProdotti>div{
+	width:300px;
+	margin:20px auto;
+}
+
+/***** CARRELLO ****/
+#shopping-cart{
+	margin: 2px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    position:fixed;
+      top: 12vh;
+      bottom:5vh;
+      right:0;
+      overflow-y:scroll;
+      overflow-x:hidden; 
+ border-top: solid #4CAF50 3px;
+  border-bottom: solid #4CAF50 3px;
+  border-radius: 15px;
+  
+}
+#shopping-cart::-webkit-scrollbar {
+    display: none;
+}
+@media screen and (max-width:992px){
+    #shopping-cart{
+      margin-bottom: 40px;
+      margin-top: 30px; 
+      position:static;
+	}
+}
+
+
+#shopping-cart a{
+    margin: 30px auto;
+}
+
+.txt-heading{
+    font-size: 30px;
+    font-weight: bold;
+    color: #4CAF50;
+    text-align: center;
+}
+
+.no-records{
+    margin: 50px auto;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: green;
+    text-align: center;
+    background-color: #dcedc8;
+    border-radius: 15px;
+}
+#btnEmpty{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: #4CAF50;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+table{
+    max-width: 300px;
+    margin: 30px auto;
+    background-color: #dcedc8;
+    border-radius: 15px;
+}
+th{
+    width: 60px;
+    min-width: 60px;
+    text-align: center;
+}
+td{
+    text-align: center;
+}
+.btnRimuovi{
+    width: 40px;
+}
+.cart-item-image{
+    width: 75px;
+    height: 75px;
+    border-radius: 15px;
+}
+.containerTabella-nome-img{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    margin: auto;
+}
+
+.btnRemoveAction{
+    width: 50px;
+    min-width: 50px;
+}
+
+@media screen and (max-width:400px){
+    th{
+        width: 40px;
+        font-size: 10px;
+    }
+    .btnRimuovi{
+        width: 30px;
+    }
+    .cart-item-image{
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+    }
+    .containerTabella-nome-img{
+        font-size: 10px;
+    }
+}
+
+
+/* Style the form */
+#regForm {
+  background-color: #ffffff;
+  border-radius:25px;
+  margin: 0px;
+  margin-left: 20px;
+  padding: 20px;
+  width: 80%;
+}
+#regForm h1{
+	font-weight: bold;
+    color: green;
+    font-size: 30px;
+}
+/* Style the input fields */
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+.tab>p{
+	margin-bottom:20px;
+}
+.tab>p>input{
+	margin-bottom:20px;
+    text-indent:10px;
+}
+.tab>p>label{
+	width: 100%;
+    margin:0px;
+    background-color: #a5d6a7;
+    border-radius: 10px;
+    line-height:20px;
+    color: black;
+    text-indent:10px;
+}
+.tab>p>label>i{
+	margin-right:10px;
+}
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+#btnForm{
+	display: flex;
+    flex-direction: row;
+     justify-content: flex-end;
+}
+
+
+
+/*** CHECKOUT FINALE ***/
+.titoloCheckout{
+	text-align: center;
+    color: #4CAF50;
+    font-weight: bold;
+    margin: 10px auto;
+    padding: 10px 0px;
+}
+.sottotitoloCheckout{
+	text-align: center;
+    font-size:22px;
+    color: #4CAF50;
+    font-weight: bold;
+    margin: 5px auto;
+    padding: 10px 0px;
+}
+.infoCheckout{
+	margin: 10px auto;
+    background-color: #f0f0f0;
+    border-radius:25px;
+}
+.containerInfoCheckout{
+	margin: 0px auto;
+	width: 300px;
+}
+@media screen and (max-width:770px){
+	.infoCheckout{
+    	width: 300px
+		margin: 0px auto;
+	}
+}
+.infoCheckout h3{
+	color: green;
+    font-size:20px;
+    font-weight: bold;
+}
+.infoCheckout>div{
+	font-size:20px;
+    font-weight: bold;
+}
+.infoCheckout span{
+    font-weight: normal;
+}
+
+
+
+/*** GESTIONE ORDINI ****/
+.infoUtente {
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    font-weight: bold;
+    font-size: 30px;
+    max-height: 300px; 
+    background-color: #f0f0f0;
+    border-radius: 25px;
+}
+#bannerLogout{
+	max-height: 400px; 
+}
+
+#containerVai{
+	margin: 0px auto;
+}
+.infoLogin{
+    background-color: #f0f0f0;
+    border-radius: 20px;
+}
+.infoLogin h1{
+	color: #4CAF50;
+	 font-weight: bold;
+    font-size: 30px;
+	text-align:center;
+    padding-top:20px;
+}
+#imgGestisciOrdini{
+	margin: 5px auto;
+}
+
+#imgUser{
+	padding: 20px 0px;
+    margin-right:30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infoUtente div span{
+    color: black;
+    font-weight: normal;
+}
+#titoloOrdini{
+    color: green;
+    font-weight: bold;
+    font-size: 30px;
+    height: 35px;
+    margin-top: 30px;
+}
+@media screen and (max-width:1080px){
+    .infoUtente{
+        margin: 15px;
+        font-size: 24px;
+    }
+}
+@media screen and (max-width:800px){
+    .infoUtente{
+        margin: 15px;
+        font-size: 20px;
+    }
+    #imgUse{
+        margin-right: 15px;
+     }
+    #imgUser i{
+        width: 100px;
+        height: 100px;
+    }
+}
+@media screen and (max-width:400px){
+    .infoUtente{
+        margin: 5px;
+        font-size: 15px;
+        flex-direction: column;
+         max-height: 200px;
+    }
+    #imgUse{
+         margin-right: 5px;
+     }
+    #imgUser i{
+        width: 50px;
+        height: 50px;
+    }
+    #titoloOrdini{
+        font-size: 20px;
+        height: 22px;
+    }
+}
+
+.listaProdotti{
+        margin: 0px;
+        background-color: #f0f0f0; 
+    }
+@media screen and (max-width:1024px){
+    .listaProdotti{
+        margin: 0px;
+    }
+}
+  
+.ordineSingolo{
+    border: solid #a5d6a7 3px;
+    border-radius: 20px 20px 15px 15px;
+    background-color: #e8f5e9;
+    margin: 10px 5px;
+    width: 280px;
+}
+.ordineSingolo:hover{
+    background-color: #a5d6a7;
+}
+.infoOrdine{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.infoOrdine>div{
+    font-weight: bold;
+}
+.infoOrdine>div>span{
+    font-weight: normal;
+}
+.infoOrdine>p{
+    margin: 0px 0px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+#titoloOrdine{
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+#titoloOrdine i{
+    margin: 0px 10px;
+}
+.containerBtn{
+    display: flex;
+    justify-content: center;
+    max-height: 55px;
+}
+.btnCancellaOrdine{
+    width:200px;
+    height:40px;
+    background-color: #4CAF50;
+    color: white;
+    margin: 10px 10px;
+    border-radius: 10px;
+    text-transform:uppercase;
+}
+.ordineProdotti{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+}
+.ordineProdotti>div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px auto;
+}
+#piantaOrdine{
+    max-width: 75px;
+    text-align: center;
+}
+.ordine-image{
+    background-color: #a5d6a7;
+    width: 75px;
+    height: 75px;
+    border-radius: 15px;
+}
+.ordine-image img{
+    border: solid #a5d6a7 2px;
+    width: 75px;
+    height: 75px;
+    border-radius: 15px;
+}
+
+
+
+.info{
+    margin: auto;
+
+}
+
+.imgLogoContatti{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.imgLogoContatti img{
+    width: 90px;
+    margin: 10px;
+}
+
+
+.info h1{
+    text-align: center;
+    width: 100%;
+    margin: 20px auto;
+}
+.info h1, .info h4{
+    font-weight: bold;
+    color: green;
+}
+.info p{
+    font-weight: bold;
+}
+.info p span{
+    font-weight: normal;
+}
+
+@media screen and (max-width:500px){
+    .info h1{
+        font-size: 30px;
+    }
+    .info h4{
+        font-size: 20px;
+    }
+
+    .info p{
+        font-size: 15px;
+    }
+
+}
+.titoloLogin{
+	font-weight: bold;
+    color: green;
+}
+.regionLogin{
+	background-color: #f0f0f0;
+    border-radius:25px;
+    margin: 20px 30px;
+}
+
+.backGrey{
+	background-color: #f0f0f0;
+    border-radius:25px;
+     margin: 20px 0px;
+}
+.backGrey>h4{
+	padding-top:15px;
+    padding-bottom: 5px;
+    margin: 0px;
+}
+.backGrey>p{
+ margin: 0px;
+    padding-bottom: 15px;
+   
+}
